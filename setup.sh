@@ -6,7 +6,7 @@ then
   mv ~/.vimrc ~/.vimrc_bkp
   echo Moving old vimrc to vimrc_bkp...
 fi 
-cp vimrc ~/.vimrc
+ln -s vimrc ~/.vimrc
 # install VimPlug
 echo Installing VimPlug...
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -33,4 +33,4 @@ then
   mv ~/.gitconfig ~/.gitconfig_bkp
   echo Moving old gitconfig to gitconfig_bkp...
 fi 
-cp gitconfig ~/.gitconfig
+ln -s gitconfig ~/.gitconfig

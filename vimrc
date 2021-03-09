@@ -72,6 +72,7 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
+set updatetime=100
 map <leader><space> :let @/=''<cr> " clear search
 
 
@@ -110,6 +111,9 @@ Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/edge'
 Plug 'pineapplegiant/spaceduck'
 Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'dag/vim-fish'
+Plug 'airblade/vim-gitgutter'
+Plug 'holomorph/vim-freefem'
 "Plug 'jeaye/color_coded'
 " Make sure you use single quotes
 
