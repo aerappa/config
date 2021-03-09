@@ -5,8 +5,8 @@ if [ -z ~/.vimrc ]
 then
   mv ~/.vimrc ~/.vimrc_bkp
   echo Moving old vimrc to vimrc_bkp...
-fi 
-ln -s vimrc ~/.vimrc
+fi
+ln -sr ./vimrc ~/.vimrc
 # install VimPlug
 echo Installing VimPlug...
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -32,5 +32,5 @@ if [ -z ~/.vimrc ]
 then
   mv ~/.gitconfig ~/.gitconfig_bkp
   echo Moving old gitconfig to gitconfig_bkp...
-fi 
-ln -s gitconfig ~/.gitconfig
+fi
+ln -sr ./gitconfig ~/.gitconfig
