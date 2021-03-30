@@ -114,6 +114,7 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'dag/vim-fish'
 Plug 'airblade/vim-gitgutter'
 Plug 'holomorph/vim-freefem'
+Plug 'frazrepo/vim-rainbow'
 "Plug 'jeaye/color_coded'
 " Make sure you use single quotes
 
@@ -168,9 +169,10 @@ if exists('+termguicolors')
    set termguicolors
 endif
 
-colorscheme edge 
+colorscheme edge
 "colorscheme jummidark
 """""""""" Airline stuff
 "let g:airline_powerline_fonts = 1
 "let g:airline_theme ="soda"
+let g:rainbow_active = 1
 let g:airline_theme = 'spaceduck'
