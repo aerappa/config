@@ -51,3 +51,13 @@ then
   echo Moving old gitconfig to gitconfig_bkp...
 fi
 ln -sr ./gitconfig ~/.gitconfig
+###################################################################
+# TMUX
+###################################################################
+echo Setting TMUX conf
+if [ -f ~/.tmux.conf ]
+then
+  mv ~/.tmux.conf ~/.tmux.conf_bkp
+  echo Moving old tmux_conf to tmux.conf_bkp...
+fi
+ln -sr ./tmux.conf ~/.tmux.conf

@@ -115,6 +115,8 @@ Plug 'dag/vim-fish'
 Plug 'airblade/vim-gitgutter'
 Plug 'holomorph/vim-freefem'
 Plug 'frazrepo/vim-rainbow'
+Plug 'pgavlin/pulumi.vim'
+Plug 'sainnhe/sonokai'
 "Plug 'jeaye/color_coded'
 " Make sure you use single quotes
 
@@ -152,9 +154,11 @@ syntax enable
 set foldmethod=syntax
 let g:tex_flavor='latex'
 let g:vimtex_compiler_latexmk = {'callback' : 0}
+let g:vimtex_syntax_enabled =0
 let g:vimtex_fold_enabled =1
 let g:vimtex_fold_manual=1
 let g:Imap_FreezeImap=1
+autocmd BufEnter *.tex colorscheme sonokai
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -169,7 +173,7 @@ if exists('+termguicolors')
    set termguicolors
 endif
 
-colorscheme edge
+colorscheme pulumi
 "colorscheme jummidark
 """""""""" Airline stuff
 "let g:airline_powerline_fonts = 1
